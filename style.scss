@@ -1,0 +1,206 @@
+/*Making use of Modules and Partials*/
+@import "image-manipulations";
+/*Variables relating to colours and font */
+$main-color:rgb(2, 33, 172);
+$secondary-color:rgb(253, 253, 255);
+$background-color1: rgb(27, 155, 255);
+$background-color2:rgb(194, 110, 31);
+$background-color3:rgb(14,122,13);
+$blocks-background-color:rgb(70, 124, 117);
+$blocks-border-color:rgb(176,210,205);
+$accent-color:rgb(0,0,0);
+$main-font-family:Georgia, 'Times New Roman', Times, serif;
+/*default setting for each webpage*/
+*{
+    padding: 0;
+    margin:0;
+    
+box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+    margin: 0;
+}
+/*background colours for 3 diffrent webpages*/
+.section1{
+    background-color:$background-color1;
+}
+.section2{
+    background-color:$background-color2;
+}
+
+.section4{
+background-color: $background-color3;
+}
+
+/*Styling Navigation Bar*/
+nav{
+    background-color: $main-color;
+    height:80px ;
+    width: 100%;
+}
+/*navigation bars logo*/
+label.logo{
+    color: $secondary-color;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+
+nav ul li a{
+    color:$secondary-color;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background:$background-color1;
+    transition: .5s;
+}
+ 
+
+h1, h2, p{
+margin-bottom: 20px;
+}
+
+/*styling for all text in home.html*/
+.section__1{
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    width: 75%;
+    text-align: justify;
+    color: $secondary-color;
+    font-family:$main-font-family;
+    font-size: larger;
+    font-size: 40px;
+    position: relative;
+    padding-top: 5%;
+
+}
+
+.section__1> * {
+    position: relative;
+    z-index: 2;
+}
+/*styling for the  blocks in home.html and genre.html */
+.blockquote {
+    max-width: 600px;
+    margin: 10px 30px;
+    padding: 25px;
+    background-color:$blocks-background-color;
+    border: 1px solid $blocks-border-color;
+    color: $accent-color;
+    box-sizing: border-box;
+}
+.blockquote__text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.15em;
+    line-height: 1.5;
+    margin: 0;
+
+}
+/*styling for all text in genre.html*/
+.section__2{
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    width: 75%;
+    text-align: justify;
+    color: $secondary-color;
+    font-family:$main-font-family;
+    font-size: larger;
+    font-size: 30px;
+    position: relative;
+    padding-top: 5%;
+    
+}
+/*styling for all text in playstation.html*/
+.section__3{
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    width: 75%;
+    text-align: justify;
+    color: $secondary-color;
+    font-family:$main-font-family;
+    font-size: larger;
+    font-size: 30px;
+    position: relative;
+    padding-top: 5%;
+    font-weight: bold;
+}
+
+.lists__text{
+    color: $accent-color;
+    margin-top: 25%;
+}
+/*styling for all text in X-box.html*/
+.section__4{
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    width: 75%;
+    text-align: justify;
+    color: $secondary-color;
+    font-family:$main-font-family;
+    font-size: larger;
+    font-size: 30px;
+    position: relative;
+    padding-top: 5%;
+}
+/*styling for the table in X-Box.html*/
+table, th, td {
+    border: 1px solid;
+  }
+  
+.Xboxtbl{
+    border: 4px;
+}
+/*styling for the radio button and submit button */
+.Hamper__option{
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    width: 75%;
+    text-align: justify;
+    color: $secondary-color;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-size: 30px;
+    position: relative;
+    padding-top: 5%;
+}
+
+.save-button{
+    display: none;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.gaming__poster1:hover + .section__1 .save-button {
+    display: block;
+  }

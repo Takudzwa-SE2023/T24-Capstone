@@ -1,0 +1,237 @@
+/*The created version of style.scss into style.css: something the web browser can read*/
+.main__image {
+  background-image: url("images/banner.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 448px;
+}
+
+.gaming__poster {
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.gaming__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.gaming__poster:hover {
+  transform: scale(1.08);
+}
+
+.gaming__poster::-webkit-scrollbar {
+  display: contents;
+}
+
+.gaming__poster {
+  max-height: 250px;
+}
+
+.gaming__poster:hover {
+  transform: scale(1.09);
+}
+
+.row {
+  color: white;
+  margin-left: 20px;
+}
+
+.background-image {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(./Images/playstationbackground.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 700px;
+}
+
+.playstation {
+  width: 25%;
+}
+
+.xbox {
+  width: 50%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: montserrat;
+  margin: 0;
+}
+
+.section1 {
+  background-color: rgb(27, 155, 255);
+}
+
+.section2 {
+  background-color: rgb(194, 110, 31);
+}
+
+.section4 {
+  background-color: rgb(14, 122, 13);
+}
+
+nav {
+  background-color: rgb(2, 33, 172);
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: rgb(253, 253, 255);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: rgb(253, 253, 255);
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+a.active, a:hover {
+  background: rgb(27, 155, 255);
+  transition: 0.5s;
+}
+
+h1, h2, p {
+  margin-bottom: 20px;
+}
+
+.section__1 {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  width: 75%;
+  text-align: justify;
+  color: rgb(253, 253, 255);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: larger;
+  font-size: 40px;
+  position: relative;
+  padding-top: 5%;
+}
+
+.section__1 > * {
+  position: relative;
+  z-index: 2;
+}
+
+.blockquote {
+  max-width: 600px;
+  margin: 10px 30px;
+  padding: 25px;
+  background-color: rgb(70, 124, 117);
+  border: 1px solid rgb(176, 210, 205);
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+.blockquote__text {
+  font-family: "Gelasio", serif;
+  font-style: italic;
+  font-size: 1.15em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.section__2 {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  width: 75%;
+  text-align: justify;
+  color: rgb(253, 253, 255);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: larger;
+  font-size: 30px;
+  position: relative;
+  padding-top: 5%;
+}
+
+.section__3 {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  width: 75%;
+  text-align: justify;
+  color: rgb(253, 253, 255);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: larger;
+  font-size: 30px;
+  position: relative;
+  padding-top: 5%;
+  font-weight: bold;
+}
+
+.lists__text {
+  color: rgb(0, 0, 0);
+  margin-top: 25%;
+}
+
+.section__4 {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  width: 75%;
+  text-align: justify;
+  color: rgb(253, 253, 255);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: larger;
+  font-size: 30px;
+  position: relative;
+  padding-top: 5%;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+.Xboxtbl {
+  border: 4px;
+}
+
+.Hamper__option {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  width: 75%;
+  text-align: justify;
+  color: rgb(253, 253, 255);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: larger;
+  font-size: 30px;
+  position: relative;
+  padding-top: 5%;
+}/*# sourceMappingURL=style.css.map */

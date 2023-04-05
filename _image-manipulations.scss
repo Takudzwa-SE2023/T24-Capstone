@@ -1,0 +1,66 @@
+/*styling for image in home.html*/
+.main__image{
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 448px;
+}
+/*styling for the images in genre.html, making the images appear horizontal and having a scrollbar*/
+.gaming__poster {
+    width: 50%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right : 10px;
+    transition: transform 450ms;
+}
+
+.gaming__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x:scroll;
+    padding: 20px;
+}
+
+.gaming__poster:hover{
+    transform: scale(1.08);
+}
+
+.gaming__poster::-webkit-scrollbar{
+display: contents;
+}
+
+
+.gaming__poster{
+    max-height: 250px;
+}
+
+.gaming__poster:hover{
+    transform:scale(1.09);
+}
+
+.row{
+    color:white;
+    margin-left: 20px;
+}
+/*styling for background image to make it a banner in playstation.html*/
+.background-image{
+    background: linear-gradient( to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(./Images/playstationbackground.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 700px;
+}
+/*styling for the images in the ordered list in playstation.html*/
+.playstation{
+    width: 25%;
+}
+
+/*styling for images in X-Box.html*/
+.xbox{
+width: 50%;
+
+}
+
