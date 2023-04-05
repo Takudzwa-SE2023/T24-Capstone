@@ -1,7 +1,7 @@
 # T24-Capstone
 ## Description
 
-This website was created to test  knowledgeon:
+This website was created to test  knowledge on:
 
 * HTML
 * CSS
