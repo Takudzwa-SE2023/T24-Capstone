@@ -21,4 +21,7 @@ To visit this site click this <a target="_blank" href="https://Takudzwa-SE2023
 1. No installation needed, just click on this <a target="_blank" href="https://Takudzwa-SE2023
 .github.io/T24-Capstone/home.html">**link**</a> and you will be redirected. 
 
-##
+## usage
+* just upen the <a target="_blank" href="https://Takudzwa-SE2023.github.io/T24-Capstone/home.html">**link**</a>
+* the home page looks like this: <img src="screenshot2.PNG">
+
